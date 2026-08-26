@@ -1,0 +1,13 @@
+export FOO := "bar"
+
+alias b := backup
+
+[group("maintenance")]
+backup:
+    @echo {{FOO}}
+
+[private]
+helper *args:
+    echo {{args}}
+
+foo := if env("USER", "none") == "root" { "admin" } else { "user" }

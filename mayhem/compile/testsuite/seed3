@@ -1,0 +1,10 @@
+mod? sub "sub.just"
+
+import? "other.just"
+
+default:
+  @just --list
+
+[unix]
+run a b="2" +rest:
+  echo {{a}} {{b}} {{rest}}

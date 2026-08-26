@@ -1,0 +1,10 @@
+set shell := ["bash", "-cu"]
+
+version := `echo 1.0`
+
+# build the thing
+build target="all":
+  echo building {{target}} {{version}}
+
+test: build
+  echo testing

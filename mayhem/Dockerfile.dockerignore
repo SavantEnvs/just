@@ -1,0 +1,6 @@
+# Prune the docker build context. NOTE: .git must stay — the commit image bakes the
+# full mayhem-branch history into /mayhem (mayhem.yml checks out with fetch-depth: 0).
+target/
+mayhem/fuzz/target/
+book/
+www/
