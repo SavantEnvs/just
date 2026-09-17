@@ -1,0 +1,7 @@
+project: savantenvs/just
+target: compile-buggy-mhh-run-76
+# origin: https://app.mayhem.security/mayhemheroes/just/compile/76
+
+cmds:
+  - cmd: /mayhem/compile
+    libfuzzer: true
